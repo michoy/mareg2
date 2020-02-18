@@ -25,6 +25,8 @@
 <inport> Id = "24"  Name = "ctrl_sixaxis2thruster/alpha_VSP1" Width = "1" DataType = "real_T" </inport>
 <inport> Id = "25"  Name = "ctrl_sixaxis2thruster/alpha_VSP2" Width = "1" DataType = "real_T" </inport>
 <inport> Id = "26"  Name = "enable_mech_el" Width = "1" DataType = "real_T" </inport>
+<inport> Id = "27"  Name = "u2pwm/BT_system/AddGainBTPos" Width = "1" DataType = "real_T" </inport>
+<inport> Id = "28"  Name = "u2pwm/BT_system/AddGainBTNeg" Width = "1" DataType = "real_T" </inport>
 <outport> Id = "1"  Name = "control input u exceeds bounds" Width = "1" DataType = "boolean_T" </outport>
 <outport> Id = "2"  Name = "indicator/ctrl_custom" Width = "1" DataType = "boolean_T" </outport>
 <outport> Id = "3"  Name = "indicator/ctrl_DP" Width = "1" DataType = "boolean_T" </outport>

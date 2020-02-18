@@ -2,9 +2,9 @@
  * NI VeriStand Model Framework code generation
  *
  * Model : u2pwm
- * Model version : 1.59
- * VeriStand Model Framework version : 2017.0.0.143 (2017)
- * Source generated on : Fri Jan 18 13:40:45 2019
+ * Model version : 1.64
+ * VeriStand Model Framework version : 2017.0.1.0 (2017 f1)
+ * Source generated on : Tue Feb 18 14:23:30 2020
  *========================================================================*/
 
 /*

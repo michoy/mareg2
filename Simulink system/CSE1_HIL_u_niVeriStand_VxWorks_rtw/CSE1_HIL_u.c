@@ -9,7 +9,7 @@
  *
  * Model version              : 1.49
  * Simulink Coder version : 8.11 (R2016b) 25-Aug-2016
- * C source code generated on : Mon Feb 03 15:47:31 2020
+ * C source code generated on : Tue Feb 18 14:25:26 2020
  *
  * Target selection: NIVeriStand_VxWorks.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -925,7 +925,7 @@ RT_MODEL_CSE1_HIL_u_T *CSE1_HIL_u(void)
  * Model : CSE1_HIL_u
  * Model version : 1.49
  * VeriStand Model Framework version : 2017.0.1.0 (2017 f1)
- * Source generated on : Mon Feb 03 15:47:27 2020
+ * Source generated on : Tue Feb 18 14:25:25 2020
  *========================================================================*/
 
 /* This file contains automatically generated code for functions
@@ -1818,7 +1818,7 @@ int32_t NI_NumTasks DataSection(".NIVS.numtasks") = 1;
 static const char* NI_CompiledModelName DataSection(".NIVS.compiledmodelname") =
   "CSE1_HIL_u";
 static const char* NI_CompiledModelVersion = "1.49";
-static const char* NI_CompiledModelDateTime = "Mon Feb 03 15:47:27 2020";
+static const char* NI_CompiledModelDateTime = "Tue Feb 18 14:25:25 2020";
 static const char* NI_builder DataSection(".NIVS.builder") =
   "NI Model Framework 2017.0.1.0 (2017 f1) for Simulink Coder 8.11 (R2016b)";
 static const char* NI_BuilderVersion DataSection(".NIVS.builderversion") =

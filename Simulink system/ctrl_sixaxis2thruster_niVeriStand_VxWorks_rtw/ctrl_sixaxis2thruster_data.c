@@ -12,9 +12,9 @@
  *
  * Code generation for model "ctrl_sixaxis2thruster".
  *
- * Model version              : 1.26
+ * Model version              : 1.27
  * Simulink Coder version : 8.11 (R2016b) 25-Aug-2016
- * C source code generated on : Fri Jan 18 13:06:31 2019
+ * C source code generated on : Tue Feb 18 14:26:14 2020
  *
  * Target selection: NIVeriStand_VxWorks.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -360,9 +360,9 @@ P_ctrl_sixaxis2thruster_T ctrl_sixaxis2thruster_P = {
  * NI VeriStand Model Framework code generation
  *
  * Model : ctrl_sixaxis2thruster
- * Model version : 1.26
- * VeriStand Model Framework version : 2017.0.0.143 (2017)
- * Source generated on : Fri Jan 18 13:06:31 2019
+ * Model version : 1.27
+ * VeriStand Model Framework version : 2017.0.1.0 (2017 f1)
+ * Source generated on : Tue Feb 18 14:26:13 2020
  *========================================================================*/
 #if defined VXWORKS || defined kNIOSLinux
 

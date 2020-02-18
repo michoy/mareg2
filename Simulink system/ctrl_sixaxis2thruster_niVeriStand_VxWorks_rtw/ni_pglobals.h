@@ -2,9 +2,9 @@
  * NI VeriStand Model Framework code generation
  *
  * Model : ctrl_sixaxis2thruster
- * Model version : 1.26
- * VeriStand Model Framework version : 2017.0.0.143 (2017)
- * Source generated on : Fri Jan 18 13:06:31 2019
+ * Model version : 1.27
+ * VeriStand Model Framework version : 2017.0.1.0 (2017 f1)
+ * Source generated on : Tue Feb 18 14:26:13 2020
  *========================================================================*/
 
 /*

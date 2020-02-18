@@ -14,9 +14,20 @@
 
 # Simulink Code Generation
 slprj/
+Simulink system/slprj/
 
 # Session info
 octave-workspace
 
 # Simulink autosave extension
 .autosave
+
+# Verisand compile stuff
+Simulink system/ctrl_custom_niVeriStand_VxWorks_rtw/
+ctrl_custom_niVeriStand_VxWorks_rtw/
+
+Simulink system/ctrl_custom_niVeriStand_VxWorks_rtw/
+Simulink system/slprj/
+
+ctrl_custom_niVeriStand_VxWorks_rtw/
+slprj/
