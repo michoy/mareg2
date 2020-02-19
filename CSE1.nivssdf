@@ -10,7 +10,7 @@
 				<String>CSE1</String>
 			</Property>
 			<Property Name="Version">
-				<String>1.0.0.83</String>
+				<String>1.0.0.87</String>
 			</Property>
 			<Property Name="Creator">
 				<String />
@@ -1285,6 +1285,9 @@
 								<Property Name="GlobalParameterScopes">
 									<I32>0</I32>
 								</Property>
+								<Property Name="Group">
+									<I32>0</I32>
+								</Property>
 							</Properties>
 							<Errors />
 							<Section Name="Execution" TypeGUID="03D3BA9F-1485-13A6-56E3D5196780015F">
@@ -1703,6 +1706,9 @@
 									</DependentFile>
 								</Property>
 								<Property Name="GlobalParameterScopes">
+									<I32>0</I32>
+								</Property>
+								<Property Name="Group">
 									<I32>0</I32>
 								</Property>
 							</Properties>
@@ -2612,10 +2618,10 @@
 									<Double>10000</Double>
 								</Property>
 								<Property Name="DLL Size">
-									<I32>170932</I32>
+									<I32>176416</I32>
 								</Property>
 								<Property Name="DLL Timestamp">
-									<Double>3664962251.0164852</Double>
+									<Double>3664967790.2488484</Double>
 								</Property>
 								<Property Name="Decimation">
 									<I32>1</I32>
@@ -2648,7 +2654,7 @@
 									<Boolean>true</Boolean>
 								</Property>
 								<Property Name="MD5">
-									<String>a8eabfde891508211f6a0024944ce06f</String>
+									<String>12edf317f942ec1eb4cfc670e2a7b2c5</String>
 								</Property>
 								<Property Name="NIVeriStandServer Port">
 									<U32>6012</U32>
@@ -2662,10 +2668,13 @@
 										<ForceDownload>false</ForceDownload>
 										<RTDestination>c:\ni-rt\system\ctrl_custom.out</RTDestination>
 										<SupportedTarget>VxWorks</SupportedTarget>
-										<MD5>a8eabfde891508211f6a0024944ce06f</MD5>
+										<MD5>12edf317f942ec1eb4cfc670e2a7b2c5</MD5>
 									</DependentFile>
 								</Property>
 								<Property Name="GlobalParameterScopes">
+									<I32>0</I32>
+								</Property>
+								<Property Name="Group">
 									<I32>0</I32>
 								</Property>
 							</Properties>
@@ -2913,6 +2922,83 @@
 										</DefaultValue>
 									</Channel>
 								</Section>
+								<Section Name="Tau_cmd calculation" TypeGUID="cbfdde93-6581-4b7c-83b8-e88484f25b2e">
+									<Description />
+									<Properties />
+									<Errors />
+									<Channel Name="L2" TypeGUID="03D3B985-1485-13A6-56FC3200A1C00087" RowDim="1" ColDim="1" Units="" BitFields="7">
+										<Description />
+										<Properties>
+											<Property Name="Model Path">
+												<String>Tau_cmd calculation/L2</String>
+											</Property>
+											<Property Name="Index">
+												<I32>2</I32>
+											</Property>
+											<Property Name="DataSource">
+												<DataSourceNode Channel="Targets/Controller/Custom Devices/WL_Joystick/L2" />
+											</Property>
+										</Properties>
+										<Errors />
+										<DefaultValue>
+											<Elem>0</Elem>
+										</DefaultValue>
+									</Channel>
+									<Channel Name="Left joystick Y" TypeGUID="03D3B985-1485-13A6-56FC3200A1C00087" RowDim="1" ColDim="1" Units="" BitFields="7">
+										<Description />
+										<Properties>
+											<Property Name="Model Path">
+												<String>Tau_cmd calculation/Left joystick Y</String>
+											</Property>
+											<Property Name="Index">
+												<I32>3</I32>
+											</Property>
+											<Property Name="DataSource">
+												<DataSourceNode Channel="Targets/Controller/Custom Devices/WL_Joystick/PosYLeft" />
+											</Property>
+										</Properties>
+										<Errors />
+										<DefaultValue>
+											<Elem>0</Elem>
+										</DefaultValue>
+									</Channel>
+									<Channel Name="Left joystick X" TypeGUID="03D3B985-1485-13A6-56FC3200A1C00087" RowDim="1" ColDim="1" Units="" BitFields="7">
+										<Description />
+										<Properties>
+											<Property Name="Model Path">
+												<String>Tau_cmd calculation/Left joystick X</String>
+											</Property>
+											<Property Name="Index">
+												<I32>4</I32>
+											</Property>
+											<Property Name="DataSource">
+												<DataSourceNode Channel="Targets/Controller/Custom Devices/WL_Joystick/PosXLeft" />
+											</Property>
+										</Properties>
+										<Errors />
+										<DefaultValue>
+											<Elem>0</Elem>
+										</DefaultValue>
+									</Channel>
+									<Channel Name="R2" TypeGUID="03D3B985-1485-13A6-56FC3200A1C00087" RowDim="1" ColDim="1" Units="" BitFields="7">
+										<Description />
+										<Properties>
+											<Property Name="Model Path">
+												<String>Tau_cmd calculation/R2</String>
+											</Property>
+											<Property Name="Index">
+												<I32>5</I32>
+											</Property>
+											<Property Name="DataSource">
+												<DataSourceNode Channel="Targets/Controller/Custom Devices/WL_Joystick/R2" />
+											</Property>
+										</Properties>
+										<Errors />
+										<DefaultValue>
+											<Elem>0</Elem>
+										</DefaultValue>
+									</Channel>
+								</Section>
 								<Channel Name="SIXAIS_INN" TypeGUID="03D3B985-1485-13A6-56FC3200A1C00087" RowDim="1" ColDim="1" Units="" BitFields="7">
 									<Description />
 									<Properties>
@@ -2928,78 +3014,6 @@
 										<Elem>0</Elem>
 									</DefaultValue>
 								</Channel>
-								<Channel Name="Left joystick X" TypeGUID="03D3B985-1485-13A6-56FC3200A1C00087" RowDim="1" ColDim="1" Units="" BitFields="7">
-									<Description />
-									<Properties>
-										<Property Name="Model Path">
-											<String>Left joystick X</String>
-										</Property>
-										<Property Name="Index">
-											<I32>1</I32>
-										</Property>
-										<Property Name="DataSource">
-											<DataSourceNode Channel="Targets/Controller/Custom Devices/WL_Joystick/PosXLeft" />
-										</Property>
-									</Properties>
-									<Errors />
-									<DefaultValue>
-										<Elem>0</Elem>
-									</DefaultValue>
-								</Channel>
-								<Channel Name="Left joystick Y" TypeGUID="03D3B985-1485-13A6-56FC3200A1C00087" RowDim="1" ColDim="1" Units="" BitFields="7">
-									<Description />
-									<Properties>
-										<Property Name="Model Path">
-											<String>Left joystick Y</String>
-										</Property>
-										<Property Name="Index">
-											<I32>2</I32>
-										</Property>
-										<Property Name="DataSource">
-											<DataSourceNode Channel="Targets/Controller/Custom Devices/WL_Joystick/PosYLeft" />
-										</Property>
-									</Properties>
-									<Errors />
-									<DefaultValue>
-										<Elem>0</Elem>
-									</DefaultValue>
-								</Channel>
-								<Channel Name="L2" TypeGUID="03D3B985-1485-13A6-56FC3200A1C00087" RowDim="1" ColDim="1" Units="" BitFields="7">
-									<Description />
-									<Properties>
-										<Property Name="Model Path">
-											<String>L2</String>
-										</Property>
-										<Property Name="Index">
-											<I32>4</I32>
-										</Property>
-										<Property Name="DataSource">
-											<DataSourceNode Channel="Targets/Controller/Custom Devices/WL_Joystick/L2" />
-										</Property>
-									</Properties>
-									<Errors />
-									<DefaultValue>
-										<Elem>0</Elem>
-									</DefaultValue>
-								</Channel>
-								<Channel Name="R2" TypeGUID="03D3B985-1485-13A6-56FC3200A1C00087" RowDim="1" ColDim="1" Units="" BitFields="7">
-									<Description />
-									<Properties>
-										<Property Name="Model Path">
-											<String>R2</String>
-										</Property>
-										<Property Name="Index">
-											<I32>5</I32>
-										</Property>
-										<Property Name="DataSource">
-											<DataSourceNode Channel="Targets/Controller/Custom Devices/WL_Joystick/R2" />
-										</Property>
-									</Properties>
-									<Errors />
-									<DefaultValue>
-										<Elem>0</Elem>
-									</DefaultValue>
-								</Channel>
 								<Channel Name="Select_btn" TypeGUID="03D3B985-1485-13A6-56FC3200A1C00087" RowDim="1" ColDim="1" Units="" BitFields="7">
 									<Description />
 									<Properties>
@@ -3007,7 +3021,7 @@
 											<String>Select_btn</String>
 										</Property>
 										<Property Name="Index">
-											<I32>3</I32>
+											<I32>1</I32>
 										</Property>
 										<Property Name="DataSource">
 											<DataSourceNode Channel="Targets/Controller/Custom Devices/WL_Joystick/Select" />
@@ -3034,7 +3048,7 @@
 												<String>u/alpha_VSP2</String>
 											</Property>
 											<Property Name="Index">
-												<I32>17</I32>
+												<I32>19</I32>
 											</Property>
 										</Properties>
 										<Errors />
@@ -3049,7 +3063,7 @@
 												<String>u/omega_VSP1</String>
 											</Property>
 											<Property Name="Index">
-												<I32>18</I32>
+												<I32>20</I32>
 											</Property>
 										</Properties>
 										<Errors />
@@ -3064,7 +3078,7 @@
 												<String>u/omega_VSP2</String>
 											</Property>
 											<Property Name="Index">
-												<I32>19</I32>
+												<I32>21</I32>
 											</Property>
 										</Properties>
 										<Errors />
@@ -3079,7 +3093,7 @@
 												<String>u/alpha_VSP1</String>
 											</Property>
 											<Property Name="Index">
-												<I32>20</I32>
+												<I32>22</I32>
 											</Property>
 										</Properties>
 										<Errors />
@@ -3094,7 +3108,7 @@
 												<String>u/u_BT</String>
 											</Property>
 											<Property Name="Index">
-												<I32>21</I32>
+												<I32>23</I32>
 											</Property>
 										</Properties>
 										<Errors />
@@ -3109,7 +3123,7 @@
 												<String>u/u_VSP1</String>
 											</Property>
 											<Property Name="Index">
-												<I32>22</I32>
+												<I32>24</I32>
 											</Property>
 										</Properties>
 										<Errors />
@@ -3124,7 +3138,7 @@
 												<String>u/u_VSP2</String>
 											</Property>
 											<Property Name="Index">
-												<I32>23</I32>
+												<I32>25</I32>
 											</Property>
 										</Properties>
 										<Errors />
@@ -3144,7 +3158,57 @@
 												<String>IMU/IMU_SCOPEZ</String>
 											</Property>
 											<Property Name="Index">
-												<I32>27</I32>
+												<I32>30</I32>
+											</Property>
+										</Properties>
+										<Errors />
+										<DefaultValue>
+											<Elem>0</Elem>
+										</DefaultValue>
+									</Channel>
+								</Section>
+								<Section Name="Tau_cmd calculation" TypeGUID="cbfdde93-6581-4b7c-83b8-e88484f25b2e">
+									<Description />
+									<Properties />
+									<Errors />
+									<Channel Name="tau_cmd_surge" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
+										<Description />
+										<Properties>
+											<Property Name="Model Path">
+												<String>Tau_cmd calculation/tau_cmd_surge</String>
+											</Property>
+											<Property Name="Index">
+												<I32>16</I32>
+											</Property>
+										</Properties>
+										<Errors />
+										<DefaultValue>
+											<Elem>0</Elem>
+										</DefaultValue>
+									</Channel>
+									<Channel Name="tau_cmd_sway" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
+										<Description />
+										<Properties>
+											<Property Name="Model Path">
+												<String>Tau_cmd calculation/tau_cmd_sway</String>
+											</Property>
+											<Property Name="Index">
+												<I32>17</I32>
+											</Property>
+										</Properties>
+										<Errors />
+										<DefaultValue>
+											<Elem>0</Elem>
+										</DefaultValue>
+									</Channel>
+									<Channel Name="tau_cmd_yaw" TypeGUID="03D3B995-1485-13A6-56ABA0860ADF91DF" RowDim="1" ColDim="1" Units="" BitFields="5">
+										<Description />
+										<Properties>
+											<Property Name="Model Path">
+												<String>Tau_cmd calculation/tau_cmd_yaw</String>
+											</Property>
+											<Property Name="Index">
+												<I32>18</I32>
 											</Property>
 										</Properties>
 										<Errors />
@@ -3160,7 +3224,7 @@
 											<String>SIXAIS_OUT</String>
 										</Property>
 										<Property Name="Index">
-											<I32>16</I32>
+											<I32>26</I32>
 										</Property>
 									</Properties>
 									<Errors />
@@ -3175,7 +3239,7 @@
 											<String>QTM_SCOPEX</String>
 										</Property>
 										<Property Name="Index">
-											<I32>24</I32>
+											<I32>27</I32>
 										</Property>
 									</Properties>
 									<Errors />
@@ -3190,7 +3254,7 @@
 											<String>QTM_SCOPEY</String>
 										</Property>
 										<Property Name="Index">
-											<I32>25</I32>
+											<I32>28</I32>
 										</Property>
 									</Properties>
 									<Errors />
@@ -3205,7 +3269,7 @@
 											<String>QTM_SCOPEPSI</String>
 										</Property>
 										<Property Name="Index">
-											<I32>26</I32>
+											<I32>29</I32>
 										</Property>
 									</Properties>
 									<Errors />
@@ -3301,6 +3365,9 @@
 									</DependentFile>
 								</Property>
 								<Property Name="GlobalParameterScopes">
+									<I32>0</I32>
+								</Property>
+								<Property Name="Group">
 									<I32>0</I32>
 								</Property>
 							</Properties>
@@ -4531,6 +4598,9 @@
 									</DependentFile>
 								</Property>
 								<Property Name="GlobalParameterScopes">
+									<I32>0</I32>
+								</Property>
+								<Property Name="Group">
 									<I32>0</I32>
 								</Property>
 							</Properties>
