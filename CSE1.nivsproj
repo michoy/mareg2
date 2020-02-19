@@ -259,11 +259,11 @@
 				</Properties>
 				<Errors />
 			</Section>
-			<Section Name="ctrl_custom.out" TypeGUID="369b9797-43bd-4cdf-8352-81032feed666">
+			<Section Name="ctrl_custom.out (1)" TypeGUID="369b9797-43bd-4cdf-8352-81032feed666">
 				<Description />
 				<Properties>
 					<Property Name="Path">
-						<String>C:\Users\MCLab\Documents\GitHub\mareg2\TMR4243Lab_material_2020V2_blank\Simulink system\ctrl_custom_niVeriStand_VxWorks_rtw\ctrl_custom.out</String>
+						<String>C:\Users\MCLab\Documents\GitHub\mareg2\Simulink system\ctrl_custom_niVeriStand_VxWorks_rtw\ctrl_custom.out</String>
 					</Property>
 				</Properties>
 				<Errors />
