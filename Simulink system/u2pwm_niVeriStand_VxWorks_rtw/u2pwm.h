@@ -7,9 +7,9 @@
  *
  * Code generation for model "u2pwm".
  *
- * Model version              : 1.64
+ * Model version              : 1.59
  * Simulink Coder version : 8.11 (R2016b) 25-Aug-2016
- * C source code generated on : Tue Feb 18 14:23:31 2020
+ * C source code generated on : Fri Jan 18 13:40:46 2019
  *
  * Target selection: NIVeriStand_VxWorks.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -850,8 +850,6 @@ typedef struct {
   real_T Sum1;                         /* '<S11>/Sum1' */
   real_T Sum;                          /* '<S11>/Sum' */
   real_T Merge;                        /* '<S14>/Merge' */
-  real_T AddGainBTPos;                 /* '<S14>/AddGainBTPos' */
-  real_T AddGainBTNeg;                 /* '<S14>/AddGainBTNeg' */
   real_T Sum2;                         /* '<S14>/Sum2' */
   real_T uDLookupTable3;               /* '<S11>/2-D Lookup Table3' */
   real_T uDLookupTable2;               /* '<S11>/2-D Lookup Table2' */
@@ -909,8 +907,6 @@ typedef struct {
   real_T enable_mech_el_DWORK1;        /* '<Root>/enable_mech_el' */
   real_T pwm_VSP1_DWORK1;              /* '<S9>/pwm_VSP1' */
   real_T pwm_VSP2_DWORK1;              /* '<S9>/pwm_VSP2' */
-  real_T AddGainBTPos_DWORK1;          /* '<S14>/AddGainBTPos' */
-  real_T AddGainBTNeg_DWORK1;          /* '<S14>/AddGainBTNeg' */
   real_T pwm_BT_DWORK1;                /* '<S9>/pwm_BT' */
   real_T pwm_servo4_DWORK1;            /* '<S9>/pwm_servo4' */
   real_T pwm_servo3_DWORK1;            /* '<S9>/pwm_servo3' */
@@ -957,8 +953,6 @@ typedef struct {
   uint8_T enable_mech_el_DWORK2[6];    /* '<Root>/enable_mech_el' */
   uint8_T pwm_VSP1_DWORK2[6];          /* '<S9>/pwm_VSP1' */
   uint8_T pwm_VSP2_DWORK2[6];          /* '<S9>/pwm_VSP2' */
-  uint8_T AddGainBTPos_DWORK2[6];      /* '<S14>/AddGainBTPos' */
-  uint8_T AddGainBTNeg_DWORK2[6];      /* '<S14>/AddGainBTNeg' */
   uint8_T pwm_BT_DWORK2[6];            /* '<S9>/pwm_BT' */
   uint8_T pwm_servo4_DWORK2[6];        /* '<S9>/pwm_servo4' */
   uint8_T pwm_servo3_DWORK2[6];        /* '<S9>/pwm_servo3' */
@@ -1037,10 +1031,10 @@ typedef struct {
 /* Parameters (auto storage) */
 struct P_u2pwm_T_ {
   real_T BT_u2pwm_gainNeg;             /* Variable: BT_u2pwm_gainNeg
-                                        * Referenced by: '<S14>/Constant'
+                                        * Referenced by: '<S14>/VPS_Speed_Gain1'
                                         */
   real_T BT_u2pwm_gainPos;             /* Variable: BT_u2pwm_gainPos
-                                        * Referenced by: '<S14>/Constant1'
+                                        * Referenced by: '<S14>/VPS_Speed_Gain2'
                                         */
   real_T BT_zero_pwm;                  /* Variable: BT_zero_pwm
                                         * Referenced by: '<S17>/Constant'
@@ -1662,7 +1656,7 @@ struct P_u2pwm_T_ {
   real_T enable_mech_el_P6;            /* Expression: btype
                                         * Referenced by: '<Root>/enable_mech_el'
                                         */
-  real_T Saturation8_UpperSat;         /* Expression: 0.3
+  real_T Saturation8_UpperSat;         /* Expression: 0.4
                                         * Referenced by: '<S11>/Saturation8'
                                         */
   real_T Saturation8_LowerSat;         /* Expression: 0
@@ -1686,7 +1680,7 @@ struct P_u2pwm_T_ {
   real_T pwm_VSP1_P6;                  /* Expression: btype
                                         * Referenced by: '<S9>/pwm_VSP1'
                                         */
-  real_T Saturation9_UpperSat;         /* Expression: 0.3
+  real_T Saturation9_UpperSat;         /* Expression: 0.4
                                         * Referenced by: '<S11>/Saturation9'
                                         */
   real_T Saturation9_LowerSat;         /* Expression: 0
@@ -1712,42 +1706,6 @@ struct P_u2pwm_T_ {
                                         */
   real_T Integrator_IC_i;              /* Expression: 0
                                         * Referenced by: '<S14>/Integrator'
-                                        */
-  real_T AddGainBTPos_P1;              /* Expression: width
-                                        * Referenced by: '<S14>/AddGainBTPos'
-                                        */
-  real_T AddGainBTPos_P2;              /* Expression: dtype
-                                        * Referenced by: '<S14>/AddGainBTPos'
-                                        */
-  real_T AddGainBTPos_P3;              /* Expression: portnum
-                                        * Referenced by: '<S14>/AddGainBTPos'
-                                        */
-  real_T AddGainBTPos_P4;              /* Expression: stime
-                                        * Referenced by: '<S14>/AddGainBTPos'
-                                        */
-  real_T AddGainBTPos_P5;              /* Expression: stype
-                                        * Referenced by: '<S14>/AddGainBTPos'
-                                        */
-  real_T AddGainBTPos_P6;              /* Expression: btype
-                                        * Referenced by: '<S14>/AddGainBTPos'
-                                        */
-  real_T AddGainBTNeg_P1;              /* Expression: width
-                                        * Referenced by: '<S14>/AddGainBTNeg'
-                                        */
-  real_T AddGainBTNeg_P2;              /* Expression: dtype
-                                        * Referenced by: '<S14>/AddGainBTNeg'
-                                        */
-  real_T AddGainBTNeg_P3;              /* Expression: portnum
-                                        * Referenced by: '<S14>/AddGainBTNeg'
-                                        */
-  real_T AddGainBTNeg_P4;              /* Expression: stime
-                                        * Referenced by: '<S14>/AddGainBTNeg'
-                                        */
-  real_T AddGainBTNeg_P5;              /* Expression: stype
-                                        * Referenced by: '<S14>/AddGainBTNeg'
-                                        */
-  real_T AddGainBTNeg_P6;              /* Expression: btype
-                                        * Referenced by: '<S14>/AddGainBTNeg'
                                         */
   real_T Switch_Threshold;             /* Expression: 0
                                         * Referenced by: '<S14>/Switch'
@@ -2248,9 +2206,9 @@ extern RT_MODEL_u2pwm_T *const u2pwm_M;
  * NI VeriStand Model Framework code generation
  *
  * Model : u2pwm
- * Model version : 1.64
- * VeriStand Model Framework version : 2017.0.1.0 (2017 f1)
- * Source generated on : Tue Feb 18 14:23:30 2020
+ * Model version : 1.59
+ * VeriStand Model Framework version : 2017.0.0.143 (2017)
+ * Source generated on : Fri Jan 18 13:40:45 2019
  *========================================================================*/
 #if !defined(NI_HEADER_u2pwm_h_)
 #define NI_HEADER_u2pwm_h_

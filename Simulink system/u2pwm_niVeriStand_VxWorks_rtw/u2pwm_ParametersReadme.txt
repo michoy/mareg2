@@ -1,6 +1,6 @@
 <parameterlist>
-<parameter> Id = "0" Inline = "0" Name = "u2pwm/u2pwm/BT_system/Constant/Value" Width = "1" DataType = "real_T" </parameter>
-<parameter> Id = "1" Inline = "0" Name = "u2pwm/u2pwm/BT_system/Constant1/Value" Width = "1" DataType = "real_T" </parameter>
+<parameter> Id = "0" Inline = "0" Name = "u2pwm/u2pwm/BT_system/VPS_Speed_Gain1/Gain" Width = "1" DataType = "real_T" </parameter>
+<parameter> Id = "1" Inline = "0" Name = "u2pwm/u2pwm/BT_system/VPS_Speed_Gain2/Gain" Width = "1" DataType = "real_T" </parameter>
 <parameter> Id = "2" Inline = "0" Name = "u2pwm/u2pwm/BT_system/If Action Subsystem2/Constant/Value" Width = "1" DataType = "real_T" </parameter>
 <parameter> Id = "3" Inline = "0" Name = "u2pwm/u2pwm/BT_system/If Action Subsystem1/Constant/Value" Width = "1" DataType = "real_T" </parameter>
 <parameter> Id = "4" Inline = "0" Name = "u2pwm/u2pwm/BT_system/If Action Subsystem/Constant/Value" Width = "1" DataType = "real_T" </parameter>

@@ -36,25 +36,23 @@
 <signal> Id = "34" Name = "u2pwm/u2pwm/Sum1" SignalName = "" PortNum = "0" Width = "1" DataType = "real_T" </signal>
 <signal> Id = "35" Name = "u2pwm/u2pwm/Sum" SignalName = "" PortNum = "0" Width = "1" DataType = "real_T" </signal>
 <signal> Id = "36" Name = "u2pwm/u2pwm/BT_system/Merge" SignalName = "" PortNum = "0" Width = "1" DataType = "real_T" </signal>
-<signal> Id = "37" Name = "u2pwm/u2pwm/BT_system/AddGainBTPos" SignalName = "" PortNum = "0" Width = "1" DataType = "real_T" </signal>
-<signal> Id = "38" Name = "u2pwm/u2pwm/BT_system/AddGainBTNeg" SignalName = "" PortNum = "0" Width = "1" DataType = "real_T" </signal>
-<signal> Id = "39" Name = "u2pwm/u2pwm/BT_system/Sum2" SignalName = "" PortNum = "0" Width = "1" DataType = "real_T" </signal>
-<signal> Id = "40" Name = "u2pwm/u2pwm/2-D Lookup Table3" SignalName = "" PortNum = "0" Width = "1" DataType = "real_T" </signal>
-<signal> Id = "41" Name = "u2pwm/u2pwm/2-D Lookup Table2" SignalName = "" PortNum = "0" Width = "1" DataType = "real_T" </signal>
-<signal> Id = "42" Name = "u2pwm/u2pwm/2-D Lookup Table" SignalName = "" PortNum = "0" Width = "1" DataType = "real_T" </signal>
-<signal> Id = "43" Name = "u2pwm/u2pwm/2-D Lookup Table1" SignalName = "" PortNum = "0" Width = "1" DataType = "real_T" </signal>
-<signal> Id = "44" Name = "u2pwm/emulate mechanical and electrical system/Sum" SignalName = "" PortNum = "0" Width = "1" DataType = "real_T" </signal>
-<signal> Id = "45" Name = "u2pwm/emulate mechanical and electrical system/Sum1" SignalName = "" PortNum = "0" Width = "1" DataType = "real_T" </signal>
-<signal> Id = "46" Name = "u2pwm/emulate mechanical and electrical system/Sum2" SignalName = "" PortNum = "0" Width = "1" DataType = "real_T" </signal>
-<signal> Id = "47" Name = "u2pwm/emulate mechanical and electrical system/Sum3" SignalName = "" PortNum = "0" Width = "1" DataType = "real_T" </signal>
-<signal> Id = "48" Name = "u2pwm/emulate mechanical and electrical system/Sum4" SignalName = "" PortNum = "0" Width = "1" DataType = "real_T" </signal>
-<signal> Id = "49" Name = "u2pwm/emulate mechanical and electrical system/Sum5" SignalName = "" PortNum = "0" Width = "1" DataType = "real_T" </signal>
-<signal> Id = "50" Name = "u2pwm/emulate mechanical and electrical system/Sum6" SignalName = "" PortNum = "0" Width = "1" DataType = "real_T" </signal>
-<signal> Id = "51" Name = "u2pwm/u2pwm/BT_system/Gain6" SignalName = "" PortNum = "0" Width = "1" DataType = "real_T" </signal>
-<signal> Id = "52" Name = "u2pwm/Switch_subsystem/Switch_function" SignalName = "" PortNum = "0" Width = "1" DataType = "real_T" </signal>
-<signal> Id = "53" Name = "u2pwm/indicator/C" SignalName = "" PortNum = "0" Width = "1" DataType = "boolean_T" </signal>
-<signal> Id = "54" Name = "u2pwm/indicator/C" SignalName = "" PortNum = "1" Width = "1" DataType = "boolean_T" </signal>
-<signal> Id = "55" Name = "u2pwm/indicator/C" SignalName = "" PortNum = "2" Width = "1" DataType = "boolean_T" </signal>
-<signal> Id = "56" Name = "u2pwm/indicator/C" SignalName = "" PortNum = "3" Width = "1" DataType = "boolean_T" </signal>
-<signal> Id = "57" Name = "u2pwm/control limit checking" SignalName = "" PortNum = "0" Width = "1" DataType = "boolean_T" </signal>
+<signal> Id = "37" Name = "u2pwm/u2pwm/BT_system/Sum2" SignalName = "" PortNum = "0" Width = "1" DataType = "real_T" </signal>
+<signal> Id = "38" Name = "u2pwm/u2pwm/2-D Lookup Table3" SignalName = "" PortNum = "0" Width = "1" DataType = "real_T" </signal>
+<signal> Id = "39" Name = "u2pwm/u2pwm/2-D Lookup Table2" SignalName = "" PortNum = "0" Width = "1" DataType = "real_T" </signal>
+<signal> Id = "40" Name = "u2pwm/u2pwm/2-D Lookup Table" SignalName = "" PortNum = "0" Width = "1" DataType = "real_T" </signal>
+<signal> Id = "41" Name = "u2pwm/u2pwm/2-D Lookup Table1" SignalName = "" PortNum = "0" Width = "1" DataType = "real_T" </signal>
+<signal> Id = "42" Name = "u2pwm/emulate mechanical and electrical system/Sum" SignalName = "" PortNum = "0" Width = "1" DataType = "real_T" </signal>
+<signal> Id = "43" Name = "u2pwm/emulate mechanical and electrical system/Sum1" SignalName = "" PortNum = "0" Width = "1" DataType = "real_T" </signal>
+<signal> Id = "44" Name = "u2pwm/emulate mechanical and electrical system/Sum2" SignalName = "" PortNum = "0" Width = "1" DataType = "real_T" </signal>
+<signal> Id = "45" Name = "u2pwm/emulate mechanical and electrical system/Sum3" SignalName = "" PortNum = "0" Width = "1" DataType = "real_T" </signal>
+<signal> Id = "46" Name = "u2pwm/emulate mechanical and electrical system/Sum4" SignalName = "" PortNum = "0" Width = "1" DataType = "real_T" </signal>
+<signal> Id = "47" Name = "u2pwm/emulate mechanical and electrical system/Sum5" SignalName = "" PortNum = "0" Width = "1" DataType = "real_T" </signal>
+<signal> Id = "48" Name = "u2pwm/emulate mechanical and electrical system/Sum6" SignalName = "" PortNum = "0" Width = "1" DataType = "real_T" </signal>
+<signal> Id = "49" Name = "u2pwm/u2pwm/BT_system/Gain6" SignalName = "" PortNum = "0" Width = "1" DataType = "real_T" </signal>
+<signal> Id = "50" Name = "u2pwm/Switch_subsystem/Switch_function" SignalName = "" PortNum = "0" Width = "1" DataType = "real_T" </signal>
+<signal> Id = "51" Name = "u2pwm/indicator/C" SignalName = "" PortNum = "0" Width = "1" DataType = "boolean_T" </signal>
+<signal> Id = "52" Name = "u2pwm/indicator/C" SignalName = "" PortNum = "1" Width = "1" DataType = "boolean_T" </signal>
+<signal> Id = "53" Name = "u2pwm/indicator/C" SignalName = "" PortNum = "2" Width = "1" DataType = "boolean_T" </signal>
+<signal> Id = "54" Name = "u2pwm/indicator/C" SignalName = "" PortNum = "3" Width = "1" DataType = "boolean_T" </signal>
+<signal> Id = "55" Name = "u2pwm/control limit checking" SignalName = "" PortNum = "0" Width = "1" DataType = "boolean_T" </signal>
 </signallist>

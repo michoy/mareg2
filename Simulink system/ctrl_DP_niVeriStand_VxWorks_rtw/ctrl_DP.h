@@ -9,7 +9,7 @@
  *
  * Model version              : 1.53
  * Simulink Coder version : 8.11 (R2016b) 25-Aug-2016
- * C source code generated on : Tue Feb 18 14:28:32 2020
+ * C source code generated on : Thu Jul 13 11:39:53 2017
  *
  * Target selection: NIVeriStand_VxWorks.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -2670,8 +2670,8 @@ extern RT_MODEL_ctrl_DP_T *const ctrl_DP_M;
  *
  * Model : ctrl_DP
  * Model version : 1.53
- * VeriStand Model Framework version : 2017.0.1.0 (2017 f1)
- * Source generated on : Tue Feb 18 14:28:24 2020
+ * VeriStand Model Framework version : 2017.0.0.143 (2017)
+ * Source generated on : Thu Jul 13 11:39:50 2017
  *========================================================================*/
 #if !defined(NI_HEADER_ctrl_DP_h_)
 #define NI_HEADER_ctrl_DP_h_

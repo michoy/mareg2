@@ -7,9 +7,9 @@
  *
  * Code generation for model "ctrl_sixaxis2thruster".
  *
- * Model version              : 1.27
+ * Model version              : 1.26
  * Simulink Coder version : 8.11 (R2016b) 25-Aug-2016
- * C source code generated on : Tue Feb 18 14:26:14 2020
+ * C source code generated on : Fri Jan 18 13:06:31 2019
  *
  * Target selection: NIVeriStand_VxWorks.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -389,9 +389,9 @@ RT_MODEL_ctrl_sixaxis2thruste_T *ctrl_sixaxis2thruster(void)
  * NI VeriStand Model Framework code generation
  *
  * Model : ctrl_sixaxis2thruster
- * Model version : 1.27
- * VeriStand Model Framework version : 2017.0.1.0 (2017 f1)
- * Source generated on : Tue Feb 18 14:26:13 2020
+ * Model version : 1.26
+ * VeriStand Model Framework version : 2017.0.0.143 (2017)
+ * Source generated on : Fri Jan 18 13:06:31 2019
  *========================================================================*/
 
 /* This file contains automatically generated code for functions
@@ -843,34 +843,34 @@ int32_t NI_InitExternalOutputs()
 static NI_Parameter NI_ParamList[] DataSection(".NIVS.paramlist") =
 {
   { 0, "ctrl_sixaxis2thruster/Subsystem/Gain/Gain", offsetof
-    (P_ctrl_sixaxis2thruster_T, Gain_Gain), 0, 1, 2, 0, 0 },
+    (P_ctrl_sixaxis2thruster_T, Gain_Gain), 22, 1, 2, 0, 0 },
 
   { 1, "ctrl_sixaxis2thruster/Subsystem/Saturation/UpperLimit", offsetof
-    (P_ctrl_sixaxis2thruster_T, Saturation_UpperSat), 0, 1, 2, 2, 0 },
+    (P_ctrl_sixaxis2thruster_T, Saturation_UpperSat), 22, 1, 2, 2, 0 },
 
   { 2, "ctrl_sixaxis2thruster/Subsystem/Saturation/LowerLimit", offsetof
-    (P_ctrl_sixaxis2thruster_T, Saturation_LowerSat), 0, 1, 2, 4, 0 },
+    (P_ctrl_sixaxis2thruster_T, Saturation_LowerSat), 22, 1, 2, 4, 0 },
 
   { 3, "ctrl_sixaxis2thruster/Subsystem1/Gain/Gain", offsetof
-    (P_ctrl_sixaxis2thruster_T, Gain_Gain_o), 0, 1, 2, 6, 0 },
+    (P_ctrl_sixaxis2thruster_T, Gain_Gain_o), 22, 1, 2, 6, 0 },
 
   { 4, "ctrl_sixaxis2thruster/Subsystem1/Saturation/UpperLimit", offsetof
-    (P_ctrl_sixaxis2thruster_T, Saturation_UpperSat_n), 0, 1, 2, 8, 0 },
+    (P_ctrl_sixaxis2thruster_T, Saturation_UpperSat_n), 22, 1, 2, 8, 0 },
 
   { 5, "ctrl_sixaxis2thruster/Subsystem1/Saturation/LowerLimit", offsetof
-    (P_ctrl_sixaxis2thruster_T, Saturation_LowerSat_j), 0, 1, 2, 10, 0 },
+    (P_ctrl_sixaxis2thruster_T, Saturation_LowerSat_j), 22, 1, 2, 10, 0 },
 
   { 6, "ctrl_sixaxis2thruster/Gain/Gain", offsetof(P_ctrl_sixaxis2thruster_T,
-    Gain_Gain_e), 0, 1, 2, 12, 0 },
+    Gain_Gain_e), 22, 1, 2, 12, 0 },
 
   { 7, "ctrl_sixaxis2thruster/VSP omega/Memory/X0", offsetof
-    (P_ctrl_sixaxis2thruster_T, Memory_X0), 0, 1, 2, 14, 0 },
+    (P_ctrl_sixaxis2thruster_T, Memory_X0), 22, 1, 2, 14, 0 },
 
   { 8, "ctrl_sixaxis2thruster/VSP omega/Saturation/UpperLimit", offsetof
-    (P_ctrl_sixaxis2thruster_T, Saturation_UpperSat_l), 0, 1, 2, 16, 0 },
+    (P_ctrl_sixaxis2thruster_T, Saturation_UpperSat_l), 22, 1, 2, 16, 0 },
 
   { 9, "ctrl_sixaxis2thruster/VSP omega/Saturation/LowerLimit", offsetof
-    (P_ctrl_sixaxis2thruster_T, Saturation_LowerSat_o), 0, 1, 2, 18, 0 },
+    (P_ctrl_sixaxis2thruster_T, Saturation_LowerSat_o), 22, 1, 2, 18, 0 },
 };
 
 static int32_t NI_ParamListSize DataSection(".NIVS.paramlistsize") = 10;
@@ -1008,12 +1008,12 @@ NI_Task NI_TaskList[] DataSection(".NIVS.tasklist") =
 int32_t NI_NumTasks DataSection(".NIVS.numtasks") = 1;
 static const char* NI_CompiledModelName DataSection(".NIVS.compiledmodelname") =
   "ctrl_sixaxis2thruster";
-static const char* NI_CompiledModelVersion = "1.27";
-static const char* NI_CompiledModelDateTime = "Tue Feb 18 14:26:13 2020";
+static const char* NI_CompiledModelVersion = "1.26";
+static const char* NI_CompiledModelDateTime = "Fri Jan 18 13:06:31 2019";
 static const char* NI_builder DataSection(".NIVS.builder") =
-  "NI Model Framework 2017.0.1.0 (2017 f1) for Simulink Coder 8.11 (R2016b)";
+  "NI Model Framework 2017.0.0.143 (2017) for Simulink Coder 8.11 (R2016b)";
 static const char* NI_BuilderVersion DataSection(".NIVS.builderversion") =
-  "2017.0.1.0";
+  "2017.0.0.143";
 
 /*========================================================================*
  * Function: NIRT_GetBuildInfo
