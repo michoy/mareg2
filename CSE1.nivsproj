@@ -241,15 +241,6 @@
 				</Properties>
 				<Errors />
 			</Section>
-			<Section Name="ctrl_custom.out (1)" TypeGUID="369b9797-43bd-4cdf-8352-81032feed666">
-				<Description />
-				<Properties>
-					<Property Name="Path">
-						<String>C:\Users\MCLab\Documents\GitHub\mareg2\Simulink system\ctrl_custom_niVeriStand_VxWorks_rtw\ctrl_custom.out</String>
-					</Property>
-				</Properties>
-				<Errors />
-			</Section>
 			<Section Name="ctrl_DP.out (1)" TypeGUID="369b9797-43bd-4cdf-8352-81032feed666">
 				<Description />
 				<Properties>
@@ -264,6 +255,15 @@
 				<Properties>
 					<Property Name="Path">
 						<String>C:\Users\MCLab\Documents\GitHub\mareg2\Simulink system\CSE1_HIL_u_niVeriStand_VxWorks_rtw\CSE1_HIL_u.out</String>
+					</Property>
+				</Properties>
+				<Errors />
+			</Section>
+			<Section Name="ctrl_custom.out" TypeGUID="369b9797-43bd-4cdf-8352-81032feed666">
+				<Description />
+				<Properties>
+					<Property Name="Path">
+						<String>C:\Users\MCLab\Documents\GitHub\mareg2\TMR4243Lab_material_2020V2_blank\Simulink system\ctrl_custom_niVeriStand_VxWorks_rtw\ctrl_custom.out</String>
 					</Property>
 				</Properties>
 				<Errors />
