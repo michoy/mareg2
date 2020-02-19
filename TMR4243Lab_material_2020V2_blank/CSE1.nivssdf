@@ -10,7 +10,7 @@
 				<String>CSE1</String>
 			</Property>
 			<Property Name="Version">
-				<String>1.0.0.64</String>
+				<String>1.0.0.65</String>
 			</Property>
 			<Property Name="Creator">
 				<String />
@@ -31,7 +31,7 @@
 						<String>VxWorks</String>
 					</Property>
 					<Property Name="IP Address">
-						<String>192.168.0.72</String>
+						<String>192.168.0.73</String>
 					</Property>
 					<Property Name="Control Loop Processor">
 						<I32>-2</I32>
