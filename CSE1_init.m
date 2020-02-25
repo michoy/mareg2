@@ -16,16 +16,21 @@ D = [
 ];
 
 
-%% Initial values
+%% Observer initial values
 
 x_init = zeros(1,9);
-y_init = zeros(1,9); % 
 
 
-%% Observer gains
+%% Constant observer matrices
 
-L1 = [];
-L2 = [];
-L3 = [];
+% Gain matrix L (tuning parameters)
+L1 = diag(0.01*ones(3,1));
+L2 = diag(0.01*ones(3,1));
+L3 = diag(0.01*ones(3,1));
 
-L = diag([L1, L2, L3]);
+L = [L1; M\L2; L3];
+
+% Input matrix B
+B = [zeros(3); inv(M); zeros(3)];
+
+

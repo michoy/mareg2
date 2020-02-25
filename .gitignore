@@ -21,6 +21,7 @@ octave-workspace
 
 # Simulink autosave extension
 .autosave
+.slxc
 
 # Verisand compile stuff
 Simulink system/ctrl_custom_niVeriStand_VxWorks_rtw/
