@@ -24,9 +24,9 @@ x_init = zeros(1,9);
 %% Constant observer matrices
 
 % Gain matrix L (tuning parameters)
-L1 = diag(0.01*ones(3,1));
-L2 = diag(0.01*ones(3,1));
-L3 = diag(0.01*ones(3,1));
+L1 = diag([75 10 10]);
+L2 = diag([75 10 10]);
+L3 = diag([7.5 1 1]);
 
 L = [L1; M\L2; L3];
 
