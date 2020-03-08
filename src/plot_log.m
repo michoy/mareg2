@@ -1,17 +1,12 @@
-LOG_PATH = 'C:\Users\MCLab\Documents\GitHub\mareg2\Logs\2020\02\19\Log File_18_52_52.csv';
+LOG_PATH = 'C:\Users\linnl\OneDrive\Dokumenter\GitMarreg\mareg2\Logs\2020\03\02\Log File_15_57_59.csv';
 
-
-% Load log
 log = readtable(LOG_PATH);
-x = log.x;
-y = log.y;
-v = log.v;
-u = log.u;
-r = log.r;
-psi = log.psi;
-tau_cmd_surge = log.tau_cmd_surge;
-tau_cmd_sway = log.tau_cmd_sway;
-tau_cmd_yaw = log.tau_cmd_yaw;
+eta_hat_x = log.eta_hat_x;
+eta_hat_y = log.eta_hat_y;
+eta_hat_psi = log.eta_hat_psi;
+eta_m_x = log.eta_m_x;
+eta_m_y = log.eta_m_y;
+eta_m_psi = log.eta_m_psi;
 joy_surge = log.PosYLeft;
 joy_sway = log.PosXLeft;
 L2 = log.L2;
@@ -29,26 +24,25 @@ hold off
 
 subplot(4,1,2)
 hold on 
-plot(tau_cmd_surge, 'LineWidth', 1.5)
-plot(tau_cmd_sway, 'LineWidth', 1.5)
-plot(tau_cmd_yaw, 'LineWidth', 1.5)
-legend('tau surge', 'tau sway', 'tau yaw')
-grid
-hold off
+plot(eta_hat_x, 'LineWidth', 1.5)
+plot(eta_m_x, 'LineWidth', 1.5)
+
+legend('estimated surge', 'measured surge')
 
 subplot(4,1,3)
 hold on
-plot(x, 'LineWidth', 1.5)
-plot(y, 'LineWidth', 1.5)
-legend('x', 'y')
+plot(eta_hat_y, 'LineWidth', 1.5)
+plot(eta_m_y, 'LineWidth', 1.5)
+legend('estimated sway', 'measured sway')
 grid
 hold off
 
 subplot(4,1,4)
 hold on
-plot(u, 'LineWidth', 1.5)
-plot(v, 'LineWidth', 1.5)
-plot(r, 'LineWidth', 1.5)
-legend('u', 'v', 'r')
+plot(eta_hat_psi, 'LineWidth', 1.5)
+plot(eta_m_psi, 'LineWidth', 1.5)
+legend('estimated yaw', 'measured yaw')
 grid
 hold off
+
+

@@ -35,3 +35,5 @@ L3 = diag([0.025 0.01 0.0001]);
 B = [zeros(3); inv(M); zeros(3)];
 
 
+%% Tracking
+K2 = zeros(3,1);
