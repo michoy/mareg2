@@ -10,7 +10,7 @@
 				<String>CSE1</String>
 			</Property>
 			<Property Name="Version">
-				<String>1.0.0.91</String>
+				<String>1.0.0.93</String>
 			</Property>
 			<Property Name="Creator">
 				<String />
@@ -31,7 +31,7 @@
 						<String>VxWorks</String>
 					</Property>
 					<Property Name="IP Address">
-						<String>192.168.0.73</String>
+						<String>192.168.0.75</String>
 					</Property>
 					<Property Name="Control Loop Processor">
 						<I32>-2</I32>
@@ -1209,6 +1209,111 @@
 							</DefaultValue>
 						</Channel>
 					</Section>
+					<Section Name="Oqus" TypeGUID="35f2e757-0c29-4d89-97e9-6f9421cf693d">
+						<Description />
+						<Properties>
+							<Property Name="CD Status">
+								<U32>1</U32>
+							</Property>
+							<Property Name="Driver VI Exec Mode">
+								<U32>1</U32>
+							</Property>
+							<Property Name="Driver VI Path_0">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\Oqus\Oqus Engine - VxWorks.llb\Oqus RT Driver VI.vi">
+									<Version>1.0</Version>
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\NIVeriStand\Custom Devices\Oqus\Oqus Engine - VxWorks.llb\Oqus RT Driver VI.vi</RTDestination>
+									<SupportedTarget>VxWorks</SupportedTarget>
+									<MD5 />
+								</DependentFile>
+							</Property>
+							<Property Name="Driver VI Path_1">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\Oqus\Oqus Engine.llb\Oqus RT Driver VI.vi">
+									<Version>1.0</Version>
+									<ForceDownload>false</ForceDownload>
+									<RTDestination>c:\ni-rt\NIVeriStand\Custom Devices\Oqus\Oqus Engine.llb\Oqus RT Driver VI.vi</RTDestination>
+									<SupportedTarget>PharLap &amp; Windows</SupportedTarget>
+									<MD5 />
+								</DependentFile>
+							</Property>
+							<Property Name="Version">
+								<String>1.0</String>
+							</Property>
+						</Properties>
+						<Errors />
+						<Channel Name="Framecnt" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" RowDim="1" ColDim="1" Units="" BitFields="1">
+							<Description />
+							<Properties />
+							<Errors />
+							<DefaultValue>
+								<Elem>0</Elem>
+							</DefaultValue>
+						</Channel>
+						<Channel Name="Error" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" RowDim="1" ColDim="1" Units="" BitFields="1">
+							<Description />
+							<Properties />
+							<Errors />
+							<DefaultValue>
+								<Elem>0</Elem>
+							</DefaultValue>
+						</Channel>
+						<Channel Name="X" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" RowDim="1" ColDim="1" Units="" BitFields="1">
+							<Description />
+							<Properties />
+							<Errors />
+							<DefaultValue>
+								<Elem>0</Elem>
+							</DefaultValue>
+						</Channel>
+						<Channel Name="Y" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" RowDim="1" ColDim="1" Units="" BitFields="1">
+							<Description />
+							<Properties />
+							<Errors />
+							<DefaultValue>
+								<Elem>0</Elem>
+							</DefaultValue>
+						</Channel>
+						<Channel Name="Z" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" RowDim="1" ColDim="1" Units="" BitFields="1">
+							<Description />
+							<Properties />
+							<Errors />
+							<DefaultValue>
+								<Elem>0</Elem>
+							</DefaultValue>
+						</Channel>
+						<Channel Name="Roll" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" RowDim="1" ColDim="1" Units="" BitFields="1">
+							<Description />
+							<Properties />
+							<Errors />
+							<DefaultValue>
+								<Elem>0</Elem>
+							</DefaultValue>
+						</Channel>
+						<Channel Name="Pictch" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" RowDim="1" ColDim="1" Units="" BitFields="1">
+							<Description />
+							<Properties />
+							<Errors />
+							<DefaultValue>
+								<Elem>0</Elem>
+							</DefaultValue>
+						</Channel>
+						<Channel Name="Yaw" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" RowDim="1" ColDim="1" Units="" BitFields="1">
+							<Description />
+							<Properties />
+							<Errors />
+							<DefaultValue>
+								<Elem>0</Elem>
+							</DefaultValue>
+						</Channel>
+						<Channel Name="Residual" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" RowDim="1" ColDim="1" Units="" BitFields="1">
+							<Description />
+							<Properties />
+							<Errors />
+							<DefaultValue>
+								<Elem>0</Elem>
+							</DefaultValue>
+						</Channel>
+					</Section>
 				</Section>
 				<Section Name="Simulation Models" TypeGUID="03D3B937-1485-13A6-5600F2871E269F9A">
 					<Description />
@@ -1652,10 +1757,10 @@
 									<Double>10000</Double>
 								</Property>
 								<Property Name="DLL Size">
-									<I32>203206</I32>
+									<I32>209259</I32>
 								</Property>
 								<Property Name="DLL Timestamp">
-									<Double>3632392815.6494069</Double>
+									<Double>3666599813.2836332</Double>
 								</Property>
 								<Property Name="Decimation">
 									<I32>1</I32>
@@ -1688,7 +1793,7 @@
 									<Boolean>true</Boolean>
 								</Property>
 								<Property Name="MD5">
-									<String>705d6af09e96a80613ddb301b810e8db</String>
+									<String>07ec9e8b6912ca846f9674ac96a29e42</String>
 								</Property>
 								<Property Name="NIVeriStandServer Port">
 									<U32>6012</U32>
@@ -1702,7 +1807,7 @@
 										<ForceDownload>false</ForceDownload>
 										<RTDestination>c:\ni-rt\system\u2pwm.out</RTDestination>
 										<SupportedTarget>VxWorks</SupportedTarget>
-										<MD5>705d6af09e96a80613ddb301b810e8db</MD5>
+										<MD5>07ec9e8b6912ca846f9674ac96a29e42</MD5>
 									</DependentFile>
 								</Property>
 								<Property Name="GlobalParameterScopes">
@@ -1815,7 +1920,7 @@
 												<String>ctrl_sixaxis2thruster/u_BT</String>
 											</Property>
 											<Property Name="Index">
-												<I32>18</I32>
+												<I32>16</I32>
 											</Property>
 											<Property Name="DataSource">
 												<DataSourceNode Channel="Targets/Controller/Simulation Models/Models/ctrl_sixaxis2thruster/Outports/u_BT" />
@@ -1833,7 +1938,7 @@
 												<String>ctrl_sixaxis2thruster/u_VSP2</String>
 											</Property>
 											<Property Name="Index">
-												<I32>19</I32>
+												<I32>17</I32>
 											</Property>
 											<Property Name="DataSource">
 												<DataSourceNode Channel="Targets/Controller/Simulation Models/Models/ctrl_sixaxis2thruster/Outports/u_VSP2" />
@@ -1851,7 +1956,7 @@
 												<String>ctrl_sixaxis2thruster/omega_VSP1</String>
 											</Property>
 											<Property Name="Index">
-												<I32>20</I32>
+												<I32>18</I32>
 											</Property>
 											<Property Name="DataSource">
 												<DataSourceNode Channel="Targets/Controller/Simulation Models/Models/ctrl_sixaxis2thruster/Outports/omega_VSP1" />
@@ -1869,7 +1974,7 @@
 												<String>ctrl_sixaxis2thruster/omega_VSP2</String>
 											</Property>
 											<Property Name="Index">
-												<I32>21</I32>
+												<I32>19</I32>
 											</Property>
 											<Property Name="DataSource">
 												<DataSourceNode Channel="Targets/Controller/Simulation Models/Models/ctrl_sixaxis2thruster/Outports/omega_VSP2" />
@@ -1887,7 +1992,7 @@
 												<String>ctrl_sixaxis2thruster/u_VSP1</String>
 											</Property>
 											<Property Name="Index">
-												<I32>22</I32>
+												<I32>20</I32>
 											</Property>
 											<Property Name="DataSource">
 												<DataSourceNode Channel="Targets/Controller/Simulation Models/Models/ctrl_sixaxis2thruster/Outports/u_VSP1" />
@@ -1905,7 +2010,7 @@
 												<String>ctrl_sixaxis2thruster/alpha_VSP1</String>
 											</Property>
 											<Property Name="Index">
-												<I32>23</I32>
+												<I32>21</I32>
 											</Property>
 											<Property Name="DataSource">
 												<DataSourceNode Channel="Targets/Controller/Simulation Models/Models/ctrl_sixaxis2thruster/Outports/alpha_VSP1" />
@@ -1923,7 +2028,7 @@
 												<String>ctrl_sixaxis2thruster/alpha_VSP2</String>
 											</Property>
 											<Property Name="Index">
-												<I32>24</I32>
+												<I32>22</I32>
 											</Property>
 											<Property Name="DataSource">
 												<DataSourceNode Channel="Targets/Controller/Simulation Models/Models/ctrl_sixaxis2thruster/Outports/alpha_VSP2" />
@@ -2057,42 +2162,6 @@
 											<Elem>0</Elem>
 										</DefaultValue>
 									</Channel>
-									<Channel Name="omega_VSP1" TypeGUID="03D3B985-1485-13A6-56FC3200A1C00087" RowDim="1" ColDim="1" Units="" BitFields="7">
-										<Description />
-										<Properties>
-											<Property Name="Model Path">
-												<String>ctrl_custom/omega_VSP1</String>
-											</Property>
-											<Property Name="Index">
-												<I32>6</I32>
-											</Property>
-											<Property Name="DataSource">
-												<DataSourceNode Channel="Targets/Controller/Simulation Models/Models/ctrl_custom/Outports/u/omega_VSP1" />
-											</Property>
-										</Properties>
-										<Errors />
-										<DefaultValue>
-											<Elem>0</Elem>
-										</DefaultValue>
-									</Channel>
-									<Channel Name="omega_VSP2" TypeGUID="03D3B985-1485-13A6-56FC3200A1C00087" RowDim="1" ColDim="1" Units="" BitFields="7">
-										<Description />
-										<Properties>
-											<Property Name="Model Path">
-												<String>ctrl_custom/omega_VSP2</String>
-											</Property>
-											<Property Name="Index">
-												<I32>7</I32>
-											</Property>
-											<Property Name="DataSource">
-												<DataSourceNode Channel="Targets/Controller/Simulation Models/Models/ctrl_custom/Outports/u/omega_VSP2" />
-											</Property>
-										</Properties>
-										<Errors />
-										<DefaultValue>
-											<Elem>0</Elem>
-										</DefaultValue>
-									</Channel>
 									<Channel Name="u_VSP1" TypeGUID="03D3B985-1485-13A6-56FC3200A1C00087" RowDim="1" ColDim="1" Units="" BitFields="7">
 										<Description />
 										<Properties>
@@ -2100,7 +2169,7 @@
 												<String>ctrl_custom/u_VSP1</String>
 											</Property>
 											<Property Name="Index">
-												<I32>8</I32>
+												<I32>6</I32>
 											</Property>
 											<Property Name="DataSource">
 												<DataSourceNode Channel="Targets/Controller/Simulation Models/Models/ctrl_custom/Outports/u/u_VSP1" />
@@ -2118,7 +2187,7 @@
 												<String>ctrl_custom/alpha_VSP1</String>
 											</Property>
 											<Property Name="Index">
-												<I32>9</I32>
+												<I32>7</I32>
 											</Property>
 											<Property Name="DataSource">
 												<DataSourceNode Channel="Targets/Controller/Simulation Models/Models/ctrl_custom/Outports/u/alpha_VSP1" />
@@ -2136,7 +2205,7 @@
 												<String>ctrl_custom/alpha_VSP2</String>
 											</Property>
 											<Property Name="Index">
-												<I32>10</I32>
+												<I32>8</I32>
 											</Property>
 											<Property Name="DataSource">
 												<DataSourceNode Channel="Targets/Controller/Simulation Models/Models/ctrl_custom/Outports/u/alpha_VSP2" />
@@ -2159,7 +2228,7 @@
 												<String>ctrl_DP/u_BT</String>
 											</Property>
 											<Property Name="Index">
-												<I32>11</I32>
+												<I32>9</I32>
 											</Property>
 											<Property Name="DataSource">
 												<DataSourceNode Channel="Targets/Controller/Simulation Models/Models/ctrl_DP/Outports/u_BT" />
@@ -2177,7 +2246,7 @@
 												<String>ctrl_DP/u_VSP2</String>
 											</Property>
 											<Property Name="Index">
-												<I32>12</I32>
+												<I32>10</I32>
 											</Property>
 											<Property Name="DataSource">
 												<DataSourceNode Channel="Targets/Controller/Simulation Models/Models/ctrl_DP/Outports/u_VSP2" />
@@ -2195,7 +2264,7 @@
 												<String>ctrl_DP/omega_VSP1</String>
 											</Property>
 											<Property Name="Index">
-												<I32>13</I32>
+												<I32>11</I32>
 											</Property>
 											<Property Name="DataSource">
 												<DataSourceNode Channel="Targets/Controller/Simulation Models/Models/ctrl_DP/Outports/omega_VSP1" />
@@ -2213,7 +2282,7 @@
 												<String>ctrl_DP/omega_VSP2</String>
 											</Property>
 											<Property Name="Index">
-												<I32>14</I32>
+												<I32>12</I32>
 											</Property>
 											<Property Name="DataSource">
 												<DataSourceNode Channel="Targets/Controller/Simulation Models/Models/ctrl_DP/Outports/omega_VSP2" />
@@ -2231,7 +2300,7 @@
 												<String>ctrl_DP/u_VSP1</String>
 											</Property>
 											<Property Name="Index">
-												<I32>15</I32>
+												<I32>13</I32>
 											</Property>
 											<Property Name="DataSource">
 												<DataSourceNode Channel="Targets/Controller/Simulation Models/Models/ctrl_DP/Outports/u_VSP1" />
@@ -2249,7 +2318,7 @@
 												<String>ctrl_DP/alpha_VSP1</String>
 											</Property>
 											<Property Name="Index">
-												<I32>16</I32>
+												<I32>14</I32>
 											</Property>
 											<Property Name="DataSource">
 												<DataSourceNode Channel="Targets/Controller/Simulation Models/Models/ctrl_DP/Outports/alpha_VSP1" />
@@ -2267,7 +2336,7 @@
 												<String>ctrl_DP/alpha_VSP2</String>
 											</Property>
 											<Property Name="Index">
-												<I32>17</I32>
+												<I32>15</I32>
 											</Property>
 											<Property Name="DataSource">
 												<DataSourceNode Channel="Targets/Controller/Simulation Models/Models/ctrl_DP/Outports/alpha_VSP2" />
@@ -2279,6 +2348,46 @@
 										</DefaultValue>
 									</Channel>
 								</Section>
+								<Section Name="u2pwm" TypeGUID="cbfdde93-6581-4b7c-83b8-e88484f25b2e">
+									<Description />
+									<Properties />
+									<Errors />
+									<Section Name="BT_system" TypeGUID="cbfdde93-6581-4b7c-83b8-e88484f25b2e">
+										<Description />
+										<Properties />
+										<Errors />
+										<Channel Name="AddGainBTPos" TypeGUID="03D3B985-1485-13A6-56FC3200A1C00087" RowDim="1" ColDim="1" Units="" BitFields="7">
+											<Description />
+											<Properties>
+												<Property Name="Model Path">
+													<String>u2pwm/BT_system/AddGainBTPos</String>
+												</Property>
+												<Property Name="Index">
+													<I32>24</I32>
+												</Property>
+											</Properties>
+											<Errors />
+											<DefaultValue>
+												<Elem>0</Elem>
+											</DefaultValue>
+										</Channel>
+										<Channel Name="AddGainBTNeg" TypeGUID="03D3B985-1485-13A6-56FC3200A1C00087" RowDim="1" ColDim="1" Units="" BitFields="7">
+											<Description />
+											<Properties>
+												<Property Name="Model Path">
+													<String>u2pwm/BT_system/AddGainBTNeg</String>
+												</Property>
+												<Property Name="Index">
+													<I32>25</I32>
+												</Property>
+											</Properties>
+											<Errors />
+											<DefaultValue>
+												<Elem>0</Elem>
+											</DefaultValue>
+										</Channel>
+									</Section>
+								</Section>
 								<Channel Name="enable_mech_el" TypeGUID="03D3B985-1485-13A6-56FC3200A1C00087" RowDim="1" ColDim="1" Units="" BitFields="7">
 									<Description />
 									<Properties>
@@ -2286,7 +2395,7 @@
 											<String>enable_mech_el</String>
 										</Property>
 										<Property Name="Index">
-											<I32>25</I32>
+											<I32>23</I32>
 										</Property>
 									</Properties>
 									<Errors />
@@ -2618,10 +2727,10 @@
 									<Double>10000</Double>
 								</Property>
 								<Property Name="DLL Size">
-									<I32>211506</I32>
+									<I32>212999</I32>
 								</Property>
 								<Property Name="DLL Timestamp">
-									<Double>3666000538.3781247</Double>
+									<Double>3666600933.5604062</Double>
 								</Property>
 								<Property Name="Decimation">
 									<I32>1</I32>
@@ -2654,7 +2763,7 @@
 									<Boolean>true</Boolean>
 								</Property>
 								<Property Name="MD5">
-									<String>427fda57dd75218835367def36799cf9</String>
+									<String>310ea1b937e19320107ae1ecd84700d7</String>
 								</Property>
 								<Property Name="NIVeriStandServer Port">
 									<U32>6012</U32>
@@ -2668,7 +2777,7 @@
 										<ForceDownload>false</ForceDownload>
 										<RTDestination>c:\ni-rt\system\ctrl_custom.out</RTDestination>
 										<SupportedTarget>VxWorks</SupportedTarget>
-										<MD5>427fda57dd75218835367def36799cf9</MD5>
+										<MD5>310ea1b937e19320107ae1ecd84700d7</MD5>
 									</DependentFile>
 								</Property>
 								<Property Name="GlobalParameterScopes">
@@ -2764,7 +2873,7 @@
 												<I32>8</I32>
 											</Property>
 											<Property Name="DataSource">
-												<DataSourceNode Channel="Targets/Controller/Simulation Models/Models/CSE1_HIL_u/Outports/eta/x" />
+												<DataSourceNode Channel="Targets/Controller/Custom Devices/Oqus/X" />
 											</Property>
 										</Properties>
 										<Errors />
@@ -2782,7 +2891,7 @@
 												<I32>9</I32>
 											</Property>
 											<Property Name="DataSource">
-												<DataSourceNode Channel="Targets/Controller/Simulation Models/Models/CSE1_HIL_u/Outports/eta/y" />
+												<DataSourceNode Channel="Targets/Controller/Custom Devices/Oqus/Y" />
 											</Property>
 										</Properties>
 										<Errors />
@@ -2800,7 +2909,7 @@
 												<I32>10</I32>
 											</Property>
 											<Property Name="DataSource">
-												<DataSourceNode Channel="Targets/Controller/Simulation Models/Models/CSE1_HIL_u/Outports/eta/psi" />
+												<DataSourceNode Channel="Targets/Controller/Custom Devices/Oqus/Yaw" />
 											</Property>
 										</Properties>
 										<Errors />
