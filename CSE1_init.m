@@ -1,3 +1,5 @@
+clear;
+clc;
 
 %% Low speed dynamics model matrices
 
@@ -37,3 +39,24 @@ B = [zeros(3); inv(M); zeros(3)];
 
 %% Tracking
 K2 = zeros(3,1);
+
+
+%% Guidance parameters
+
+U_ref = 0.15; % [m/s]
+path_selection = 0; % elipsoidal if 1, straight else
+
+% straight path
+start_point = [0 0]';
+end_point = [10 3]';
+
+% ellipsoidal path
+center_point = [1 1]';
+radius_xy = diag([1 1]);
+
+
+%% Controller tuning paramters
+
+my = 0.05;
+Kp = 1;
+
