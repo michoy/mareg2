@@ -44,7 +44,7 @@ K2 = zeros(3,1);
 %% Guidance parameters
 
 U_ref = 0.15; % [m/s]
-path_selection = 0; % elipsoidal if 1, straight else
+path_selection = 1; % elipsoidal if 1, straight else
 
 % straight path
 start_point = [0 0]';
