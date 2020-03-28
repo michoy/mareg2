@@ -17,46 +17,44 @@ D = [
     [0 0 1.9];
 ];
 
+% Input matrix B
+B = [zeros(3); inv(M); zeros(3)];
+
 
 %% Observer initial values
 
 x_init = zeros(1,9);
 
 
-%% Constant observer matrices
+%% Observer paramters
 
 % Gain matrix L (tuning parameters)
-% L1 = diag([1 1 1]);
-% L2 = diag([0.1 0.1 0.1]);
-% L3 = diag([0.025 0.01 0.0001]);
 L1 = diag([1 1 1]);
 L2 = diag([0.1 0.1 0.1]);
 L3 = diag([0.025 0.01 0.0001]);
 
-% Input matrix B
-B = [zeros(3); inv(M); zeros(3)];
+% 1 for true, 0 for false
+measurment_noise = 0;
+measurement_signal_available = 0;
 
-
-%% Tracking
-K2 = zeros(3,1);
 
 
 %% Guidance parameters
 
 U_ref = 0.15; % [m/s]
-path_selection = 1; % elipsoidal if 1, straight else
+path_selection = 0; % elipsoidal if 1, straight if 0
 
 % straight path
 start_point = [0 0]';
 end_point = [10 3]';
 
 % ellipsoidal path
-center_point = [1 1]';
-radius_xy = diag([1 1]);
+center_point = [1 0]';
+radius_xy = diag([1 2]);
 
 
-%% Controller tuning paramters
+%% Controller paramters
 
 my = 0.05;
-Kp = 1;
+Kp = 1e-10;
 
