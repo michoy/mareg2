@@ -35,7 +35,7 @@ L3 = diag([0.025 0.01 0.0001]);
 
 % 1 for true, 0 for false
 measurment_noise = 0;
-measurement_signal_available = 0;
+measurement_signal_available = 1;
 
 
 
@@ -56,5 +56,6 @@ radius_xy = diag([1 2]);
 %% Controller paramters
 
 my = 0.05;
-Kp = 1e-10;
+Kp = 1e-2;
+Kd = 1e-2;
 
