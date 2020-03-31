@@ -45,10 +45,10 @@ U_ref = 0.15; % [m/s]
 path_selection = 0; % elipsoidal if 1, straight if 0
 
 % straight path
-end_point = [0 0]';
-
+end_point = [10 10]';
+start_point = [0 0]';
 % ellipsoidal path
-center_point = [1 0]';
+center_point = [0 0]';
 radius_xy = diag([1 2]);
 
 
