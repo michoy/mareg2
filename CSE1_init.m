@@ -21,12 +21,10 @@ D = [
 B = [zeros(3); inv(M); zeros(3)];
 
 
-%% Observer initial values
-
-x_init = zeros(1,9);
-
-
 %% Observer paramters
+
+% initial values
+x_init = zeros(1,9);
 
 % Gain matrix L (tuning parameters)
 L1 = diag([1 1 1]);
@@ -41,12 +39,14 @@ measurement_signal_available = 1;
 
 %% Guidance parameters
 
-U_ref = 0.15; % [m/s]
-path_selection = 0; % elipsoidal if 1, straight if 0
+U_ref = 0.15;                   % [m/s]
+path_selection = 0;             % elipsoidal if 1, straight if 0
+initial_trigger_delay = 50;     % [s]
 
 % straight path
-end_point = [10 10]';
-start_point = [0 0]';
+path_length = 5;                % [m]
+radius_of_acceptance = 0.2;     % [m]
+
 % ellipsoidal path
 center_point = [0 0]';
 radius_xy = diag([1 2]);
@@ -54,7 +54,14 @@ radius_xy = diag([1 2]);
 
 %% Controller paramters
 
+initial_tau = [0.1 0.1 0.1]';
+
 my = 0.05;
 Kp = 1e-2;
 Kd = 1e-2;
+
+
+%% Thruster allocation
+
+allocation_selection = 0;
 

@@ -1,19 +1,22 @@
-x = observer{10}.Values.Data(1,:);
-y = observer{10}.Values.Data(2,:);
-psi = observer{10}.Values.Data(3,:);
-x_hat = observer{7}.Values.Data(:,1);
-y_hat = observer{7}.Values.Data(:,2);
-psi_hat = observer{7}.Values.Data(:,3);
-x_d = observer{4}.Values.Data(:,1);
-y_d = observer{4}.Values.Data(:,2);
-psi_d = observer{4}.Values.Data(:,3);
+x = log{9}.Values.Data(1,:);
+y = log{9}.Values.Data(2,:);
+psi = log{9}.Values.Data(3,:);
 
-tau_cmd_x = observer{12}.Values.Data(:,1);
-tau_cmd_y = observer{12}.Values.Data(:,2);
-tau_cmd_psi = observer{12}.Values.Data(:,3);
+x_hat = log{6}.Values.Data(:,1);
+y_hat = log{6}.Values.Data(:,2);
+psi_hat = log{6}.Values.Data(:,3);
+
+x_d = log{4}.Values.Data(:,1);
+y_d = log{4}.Values.Data(:,2);
+psi_d = log{4}.Values.Data(:,3);
+
+tau_cmd_x = log{11}.Values.Data(1,:);
+tau_cmd_y = log{11}.Values.Data(2,:);
+tau_cmd_psi = log{11}.Values.Data(3,:);
+
 subplot(3,1,1)
 hold on
-plot(x, y, x_hat, y_hat,x_d,y_d)
+plot(x, y, x_hat, y_hat, x_d, y_d)
 legend('eta', 'eta\_hat', 'eta\_d')
 grid
 axis equal
@@ -32,7 +35,7 @@ subplot(3,1,3)
 hold on
 plot(tau_cmd_x)
 plot(tau_cmd_y)
-%plot(tau_cmd_psi)
-legend('tau\_cmd\_x','tau\_cmd\_y')
+plot(tau_cmd_psi)
+legend('tau\_cmd\_x', 'tau\_cmd\_y', 'tau\_cmd\_psi')
 grid
 hold off
