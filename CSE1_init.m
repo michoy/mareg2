@@ -40,7 +40,7 @@ measurement_signal_available = 1;
 %% Guidance parameters
 
 U_ref = 0.15;                   % [m/s]
-path_selection = 0;             % elipsoidal if 1, straight if 0
+path_selection = 1;             % elipsoidal if 0, straight if 1
 initial_trigger_delay = 50;     % [s]
 
 % straight path

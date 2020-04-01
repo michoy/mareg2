@@ -1,18 +1,18 @@
-x = log{9}.Values.Data(1,:);
-y = log{9}.Values.Data(2,:);
-psi = log{9}.Values.Data(3,:);
+x = log{11}.Values.Data(1,:);
+y = log{11}.Values.Data(2,:);
+psi = log{11}.Values.Data(3,:);
 
-x_hat = log{6}.Values.Data(:,1);
-y_hat = log{6}.Values.Data(:,2);
-psi_hat = log{6}.Values.Data(:,3);
+x_hat = log{9}.Values.Data(:,1);
+y_hat = log{9}.Values.Data(:,2);
+psi_hat = log{9}.Values.Data(:,3);
 
-x_d = log{4}.Values.Data(:,1);
-y_d = log{4}.Values.Data(:,2);
-psi_d = log{4}.Values.Data(:,3);
+x_d = log{5}.Values.Data(:,1);
+y_d = log{5}.Values.Data(:,2);
+psi_d = log{5}.Values.Data(:,3);
 
-tau_cmd_x = log{11}.Values.Data(1,:);
-tau_cmd_y = log{11}.Values.Data(2,:);
-tau_cmd_psi = log{11}.Values.Data(3,:);
+tau_cmd_x = log{4}.Values.Data(1,:);
+tau_cmd_y = log{4}.Values.Data(2,:);
+tau_cmd_psi = log{4}.Values.Data(3,:);
 
 subplot(3,1,1)
 hold on
