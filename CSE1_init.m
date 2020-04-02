@@ -30,9 +30,9 @@ measurement_signal_available = 1;
 x_init = zeros(1,9);
 
 % tuning parameters
-L1 = diag([1 1 1]);
-L2 = diag([0.1 0.1 0.1]);
-L3 = diag([0.025 0.01 0.0001]);
+L1 = diag([3 5 3]);
+L2 = diag([2 0.5 2]);
+L3 = diag([2 0.5 2]);
 
 
 %% Guidance parameters
