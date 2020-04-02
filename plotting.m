@@ -1,10 +1,10 @@
-x = logsout{11}.Values.Data(1,:);
-y = logsout{11}.Values.Data(2,:);
-psi = logsout{11}.Values.Data(3,:);
+x = logsout{12}.Values.Data(1,:);
+y = logsout{12}.Values.Data(2,:);
+psi = logsout{12}.Values.Data(3,:);
 
-x_hat = logsout{12}.Values.Data(:,1);
-y_hat = logsout{12}.Values.Data(:,2);
-psi_hat = logsout{12}.Values.Data(:,3);
+x_hat = logsout{13}.Values.Data(:,1);
+y_hat = logsout{13}.Values.Data(:,2);
+psi_hat = logsout{13}.Values.Data(:,3);
 
 x_d = logsout{6}.Values.Data(:,1);
 y_d = logsout{6}.Values.Data(:,2);
@@ -14,9 +14,13 @@ tau_cmd_x = logsout{2}.Values.Data(1,:);
 tau_cmd_y = logsout{2}.Values.Data(2,:);
 tau_cmd_psi = logsout{2}.Values.Data(3,:);
 
+
+path_start = uint64(length(x_d) * initial_trigger_delay / 150) + 10;
+%path_start = 0;
+
 subplot(3,1,1)
 hold on
-plot(x, y, x_hat, y_hat, x_d, y_d)
+plot(x, y, x_hat, y_hat, x_d(path_start:end), y_d(path_start:end))
 lgd = legend('eta', 'eta\_hat', 'eta\_d');
 lgd.Location = 'southwest';
 grid

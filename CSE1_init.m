@@ -41,8 +41,8 @@ L3 = diag([2 0.5 2]);
 
 %% Guidance parameters
 
-initial_path = 0;               % elipsoidal if 1, straight if 0
-U_ref = 0.15;                   % [m/s]
+initial_path = 1;               % elipsoidal if 1, straight if 0
+U_ref = 0.1;                   % [m/s]
 initial_trigger_delay = 10;     % [s]
 
 % straight path
@@ -50,7 +50,7 @@ path_length = 5;                % [m]
 %radius_of_acceptance = 0.2;     % [m]
 
 % ellipsoidal path
-s_lim = 1;                      % at what s the next path should be started
+s_lim = 0.5;                      % at what s the next path should be started
 radius_xy = diag([2 2]);
 
 
