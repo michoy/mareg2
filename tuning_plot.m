@@ -1,6 +1,6 @@
-x = logsout{13}.Values.Data(1,:);
-y = logsout{13}.Values.Data(2,:);
-psi = logsout{13}.Values.Data(3,:);
+x = logsout{13}.Values.Data(:,1);
+y = logsout{13}.Values.Data(:,2);
+psi = logsout{13}.Values.Data(:,3);
 
 x_hat = logsout{14}.Values.Data(:,1);
 y_hat = logsout{14}.Values.Data(:,2);
@@ -17,12 +17,13 @@ tau_cmd_psi = logsout{2}.Values.Data(3,:);
 z1 = logsout{4}.Values.Data;
 z2 = logsout{5}.Values.Data;
 
-path_start = uint64(length(x_d) * initial_trigger_delay / 150) + 10;
+path_start = uint64(length(x_d) * initial_trigger_delay / ...
+    simulation_time) + 10;
 
 
 subplot(5,1,1)
 hold on
-plot(x, y, x_hat, y_hat, x_d(path_start:end), y_d(path_start:end))
+plot(y, x, y_hat, x_hat, y_d(path_start:end), x_d(path_start:end))
 lgd = legend('eta', 'eta\_hat', 'eta\_d');
 lgd.Location = 'northwest';
 grid
