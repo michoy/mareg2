@@ -23,18 +23,16 @@ B = [zeros(3); inv(M); zeros(3)];
 
 %% Observer paramters
 
-% initial values
-x_init = zeros(1,9);
-
-% Gain matrix L (tuning parameters)
-L1 = diag([1 1 1]);
-L2 = diag([0.1 0.1 0.1]);
-L3 = diag([0.025 0.01 0.0001]);
-
-% 1 for true, 0 for false
 measurment_noise = 0;
 measurement_signal_available = 1;
 
+% initial values
+x_init = zeros(1,9);
+
+% tuning parameters
+L1 = diag([1 1 1]);
+L2 = diag([0.1 0.1 0.1]);
+L3 = diag([0.025 0.01 0.0001]);
 
 
 %% Guidance parameters
@@ -45,7 +43,7 @@ initial_trigger_delay = 50;     % [s]
 
 % straight path
 path_length = 5;                % [m]
-radius_of_acceptance = 0.2;     % [m]
+%radius_of_acceptance = 0.2;     % [m]
 
 % ellipsoidal path
 s_lim = 1;                      % at what s the next path should be started
@@ -56,6 +54,7 @@ radius_xy = diag([2 2]);
 
 initial_tau = [0.1 0.1 0.1]';
 
+% tuning parameters
 my = 0.016;
 Kp = 25e-2;
 Kd = 40e-2;
