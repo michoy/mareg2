@@ -60,8 +60,8 @@ initial_tau = [0.1 0.1 0.1]';
 
 % tuning parameters
 my = 0.016;
-Kp = 25e-2;
-Kd = 40e-2;
+Kp = diag([25e-2 25e-2 25e-4]);
+Kd = diag([40e-2 40e-2 40e-2]);
 
 
 %% Thruster allocation
