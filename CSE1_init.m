@@ -39,8 +39,8 @@ measurement_signal_available = 1;
 
 %% Guidance parameters
 
+initial_path = 0;               % elipsoidal if 1, straight if 0
 U_ref = 0.15;                   % [m/s]
-path_selection = 1;             % elipsoidal if 0, straight if 1
 initial_trigger_delay = 50;     % [s]
 
 % straight path
@@ -48,17 +48,17 @@ path_length = 5;                % [m]
 radius_of_acceptance = 0.2;     % [m]
 
 % ellipsoidal path
-center_point = [0 0]';
-radius_xy = diag([1 2]);
+s_lim = 1;                      % at what s the next path should be started
+radius_xy = diag([2 2]);
 
 
 %% Controller paramters
 
 initial_tau = [0.1 0.1 0.1]';
 
-my = 0.05;
-Kp = 1e-2;
-Kd = 1e-2;
+my = 0.016;
+Kp = 25e-2;
+Kd = 40e-2;
 
 
 %% Thruster allocation
