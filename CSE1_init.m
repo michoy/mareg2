@@ -20,6 +20,10 @@ D = [
 % Input matrix B
 B = [zeros(3); inv(M); zeros(3)];
 
+%% Measurement mapping
+
+limit = pi;
+
 
 %% Observer paramters
 
@@ -39,7 +43,7 @@ L3 = diag([2 0.5 2]);
 
 initial_path = 0;               % elipsoidal if 1, straight if 0
 U_ref = 0.15;                   % [m/s]
-initial_trigger_delay = 50;     % [s]
+initial_trigger_delay = 10;     % [s]
 
 % straight path
 path_length = 5;                % [m]

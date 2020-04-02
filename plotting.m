@@ -1,14 +1,14 @@
-x = logsout{13}.Values.Data(1,:);
-y = logsout{13}.Values.Data(2,:);
-psi = logsout{13}.Values.Data(3,:);
+x = logsout{11}.Values.Data(1,:);
+y = logsout{11}.Values.Data(2,:);
+psi = logsout{11}.Values.Data(3,:);
 
-x_hat = logsout{10}.Values.Data(:,1);
-y_hat = logsout{10}.Values.Data(:,2);
-psi_hat = logsout{10}.Values.Data(:,3);
+x_hat = logsout{12}.Values.Data(:,1);
+y_hat = logsout{12}.Values.Data(:,2);
+psi_hat = logsout{12}.Values.Data(:,3);
 
-x_d = logsout{5}.Values.Data(:,1);
-y_d = logsout{5}.Values.Data(:,2);
-psi_d = logsout{5}.Values.Data(:,3);
+x_d = logsout{6}.Values.Data(:,1);
+y_d = logsout{6}.Values.Data(:,2);
+psi_d = logsout{6}.Values.Data(:,3);
 
 tau_cmd_x = logsout{2}.Values.Data(1,:);
 tau_cmd_y = logsout{2}.Values.Data(2,:);
