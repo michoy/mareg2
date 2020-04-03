@@ -2,53 +2,43 @@ eta = logsout{13}.Values;
 x = logsout{13}.Values.Data(:,1);
 y = logsout{13}.Values.Data(:,2);
 
-eta_d = logsout{7}.Values;
-x_d = logsout{7}.Values.Data(:,1);
-y_d = logsout{7}.Values.Data(:,2);
+eta_h = logsout{14}.Values;
+x_h = logsout{14}.Values.Data(:,1);
+y_h = logsout{14}.Values.Data(:,2);
 
-tau = logsout{2}.Values;
 
-u = logsout{17}.Values;
-u_time = logsout{17}.Values.time;
-u_bow = logsout{17}.Values.Data(:,1);
-u_1 = logsout{17}.Values.Data(:,2);
-u_2 = logsout{17}.Values.Data(:,3);
-a_1 = logsout{17}.Values.Data(:,4);
-a_2 = logsout{17}.Values.Data(:,5);
+nu = logsout{20}.Values;
+nu_hat= logsout{15}.Values;
 
-path_start = uint64(length(x_d) * initial_trigger_delay / ...
-    simulation_time) + 5;
+bias_hat = logsout{17}.Values;
 
-subplot(4,1,1:2)
+
+subplot(3,1,1)
 hold on
-plot(y, x, y_d(path_start:end), x_d(path_start:end))
-lgd = legend('eta', 'eta\_d');
+plot(y, x, y_h, x_h)
+lgd = legend('eta', 'eta\_hat');
 lgd.Location = 'northeast';
 grid
 axis equal
 hold off
 
 
-subplot(4,1,3)
-hold on 
-plot(eta.time, x)
-plot(eta.time, y)
-plot(eta_d.time, x_d, '--')
-plot(eta_d.time, y_d, '--')
-lgd = legend('x', 'y', 'x\_d', 'y\_d');
-lgd.Location = 'northwest';
-grid 
-hold off
-
-subplot(4,1,4)
+subplot(3,1,2)
 hold on
-plot(eta.time, eta.Data(:,3))
-plot(eta_d.time, eta_d.Data(:,3), '--')
-lgd = legend('psi', 'psi\_d');
-lgd.Location = 'northwest';
+plot(nu)
+plot(nu_hat)
+lgd = legend('nu_x','nu_y','nu_{psi}', 'nu\_hat_x','nu\_hat_y','nu\_hat_{psi}');
+lgd.Location = 'northeast';
 grid
 hold off
 
+subplot(3,1,3)
+hold on
+plot(bias_hat)
+lgd = legend('bias_x','bias_y','bias_{psi}');
+lgd.Location = 'northeast';
+grid
+hold off
 
 
 

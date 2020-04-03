@@ -28,6 +28,7 @@ limit = pi;
 %% Observer paramters
 
 measurment_noise = 0;
+noise_value = [0.01 0.01 0.001]';
 measurement_signal_available = 1;
 
 % initial values

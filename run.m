@@ -1,9 +1,10 @@
 CSE1_init
 
 simulation_time = 180;
+step_time = 70;
 
-initial_tau = [0.1 0.1 0.1]';
-initial_trigger_delay = 50;     % [s]
+initial_tau = [0.5 0.5 0]';
+initial_trigger_delay = simulation_time;     % [s]
 s_lim = 0.5;   
 
 radius_xy = diag([3 3]);
@@ -14,4 +15,3 @@ Kd = diag([1 1 3]) * 1e-1;
 sim('CSE1_HIL_full.slx', simulation_time);
 clc;
 
-tuning_plot
