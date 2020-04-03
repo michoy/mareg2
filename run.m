@@ -1,6 +1,6 @@
 CSE1_init
 
-simulation_time = 200;
+simulation_time = 180;
 
 initial_tau = [0.1 0.1 0.1]';
 initial_trigger_delay = 50;     % [s]

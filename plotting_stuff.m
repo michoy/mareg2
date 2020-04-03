@@ -19,20 +19,32 @@ a_2 = logsout{17}.Values.Data(:,5);
 path_start = uint64(length(x_d) * initial_trigger_delay / ...
     simulation_time) + 5;
 
-subplot(3,1,1:2)
+
+subplot(3,1,1)
 hold on
-plot(y, x, y_d(path_start:end), x_d(path_start:end))
-lgd = legend('eta', 'eta\_d');
-lgd.Location = 'northeast';
+plot(tau)
+lgd = legend('tau\_x', 'tau\_y', 'tau\_psi');
+lgd.Location = 'northwest';
 grid
-axis equal
+hold off
+
+subplot(3,1,2)
+hold on
+plot(u_time, u_bow)
+plot(u_time, u_1)
+plot(u_time, u_2)
+lgd = legend('u\_bow', 'u\_1', 'u\_2');
+lgd.Location = 'northwest';
+grid
 hold off
 
 subplot(3,1,3)
 hold on
-plot(eta.time, eta.Data(:,3))
-plot(eta_d.time, eta_d.Data(:,3))
-lgd = legend('psi', 'psi\_d');
+plot(u_time, a_1)
+plot(u_time, a_2)
+lgd = legend('a\_1', 'a\_2');
 lgd.Location = 'northwest';
 grid
 hold off
+
+

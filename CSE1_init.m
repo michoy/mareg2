@@ -46,7 +46,7 @@ U_ref = 0.25;                   % [m/s]
 initial_trigger_delay = 50;     % [s]
 
 % straight path
-path_length = 5;                % [m]
+path_length = 10;                % [m]
 
 % ellipsoidal path
 s_lim = 0.5;                      % at what s the next path should be started
